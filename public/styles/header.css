@@ -1,7 +1,8 @@
-.header {
-  height: 400px;
+.main-header {
+  height: 500px;
   width: 100%;
   padding: 20px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,3 +12,6 @@
   background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 }
 
+.profile-image {
+  margin: 5px;
+}

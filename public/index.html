@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-feed.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -29,8 +32,8 @@
       <span><strong>Write</strong> a new tweet</span>
     </nav>
 
-    <header class = "header">
-      <div>
+    <header class= "main-header">
+      <div class="profile-image">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
@@ -42,15 +45,33 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
         <form method = "POST" action = "/tweets/">
-          <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
           <div class="button-counter">
             <button type="submit" id="tweet-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <br>
+      <section class="tweet-container">
+        <article>
+          <header class="header">
+            <div class="username user-profile">
+              <img src="/images/profileavatar.jpg" alt="user" height="60">User</div>
+            <div class="handle">@UserHandle</div>
+          </header>
+          <div class="tweets">Hello World!</div>
+          <footer class="footer">
+            <div class="date">10 days ago</div>
+            <div class="icons">
+              <div><img src="/images/flag2.png" alt="Flag" height="15"></div>
+              <div><img src="/images/retweet.png" alt="Retweet" height="12"></div>
+              <div><img src="/images/heart.png" alt="Heart" height="15"></div>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>
