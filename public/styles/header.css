@@ -1,17 +1,39 @@
+* {
+  padding: 0px;
+  border: 0px;
+}
+
 .main-header {
-  height: 500px;
+  height: 100%;
   width: 100%;
-  padding: 20px;
-  margin-top: 90px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-items: center;
-  background-color: #ba804e;
-  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  background-color: #6e57ac;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+
 }
 
 .profile-image {
+  padding-top: 100px;
   margin: 5px;
 }
+
+.user-name-main {
+  color: #10300b;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12%;
+}
+
+/* .icon {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  stroke-width: 2;
+  stroke: black;
+  fill: black;
+} */

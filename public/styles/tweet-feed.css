@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  border: 0px;
+}
+
 .tweet-container {
   padding: 5px;
 }

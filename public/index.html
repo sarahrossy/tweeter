@@ -23,28 +23,33 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
-      <nav class = "navbar">
-      <span id = "logo">TWEETER</span>
+      <nav class="navbar" id="nav-bar-section">
+      <span id="logo">TWEETER</span>
       <span><strong>Write</strong> a new tweet</span>
     </nav>
 
-    <header class= "main-header">
+    <div id="header-body">
+    <header class="main-header" id="header-section">
       <div class="profile-image">
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
       <div>
-          <h2>Sarah</h2>
+          <h2 class="user-name-main">Sarah</h2>
       </div>
+      <!-- <svg class="icon icon-circle-down"><use xlink:href="#icon-circle-down"></use></svg> -->
   </header>
+
+  <div id="body-section">
   <section id="errors">
     <div class="error-too-long">Message is too long!<br>Please shorten your tweet to 140 characters.</div>
     <div class="error-empty-msg">Oops! Your tweet is empty!</div>
   </section>
+
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -77,6 +82,8 @@
           </footer>
         </article> -->
       </section>
+    </div>
     </main>
+  </div>
   </body>
 </html>

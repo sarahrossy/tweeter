@@ -27,3 +27,24 @@ body {
 #logo {
   font-family: 'Bungee', sans-serif;
  }
+
+ #nav-bar-section #header-body #header-section #body-section {
+   display: flex;
+   flex-direction: column;
+ }
+
+ @media only screen and (min-width: 1024px) {
+  #header-body {
+    display: flex;
+    flex-direction: row;
+  }
+  #header-section {
+    width: 40%;
+    margin-top: 100px;
+    height: 100%;
+  }
+  #body-section {
+    margin-top: 100px;
+  }
+
+}
