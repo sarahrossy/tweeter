@@ -1,10 +1,15 @@
 .tweet-container {
-  border: 4px solid grey;
-  padding: 20px
+  padding: 5px;
 }
 
-.tweet-container:hover {
-  box-shadow: 8px 8px  rgb(209, 216, 196);
+.tweet-article {
+  border: 4px solid grey;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tweet-article:hover {
+  box-shadow: 5px 5px  rgb(209, 216, 196);
 }
 
 .header {
@@ -21,12 +26,13 @@
   font-size: 20px;
 }
 
-.tweet-container:hover .tweets {
+.tweet-article:hover .tweets {
   font-weight: 600;
 }
 
 .username {
   font-size: 24px;
+  padding: 5px;
 }
 
 .user-profile {
@@ -38,9 +44,9 @@
   display: none;
 }
 
-.tweet-container:hover .handle {
+.tweet-article:hover .handle {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: rgb(209, 216, 196);
 }

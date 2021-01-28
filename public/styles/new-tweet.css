@@ -8,6 +8,24 @@
   padding: 15px;
 }
 
+#errors {
+  display: none;
+  border: 4px solid red; 
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: red;
+}
+
+.error-too-long {
+  display: none;
+}
+
+.error-empty-msg {
+  display: none;
+}
+
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -22,7 +40,7 @@
   border-bottom: 4px solid grey;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  margin: 10px;
   width: 100%;
   height: 2.5em;
   font-size: 20px;
@@ -42,7 +60,6 @@
 .counter {
   font-family: 'Bungee', sans-serif;
   color: grey;
-  justify-content: flex-end;
   font-size: 20px;
 }
 
@@ -50,9 +67,9 @@
   color: red;
 }
 
-.button-counter {
+#tweet-button .counter {
   display: flex;
-  justify-content: 
+  justify-content: space-around;
   width: 90%;
   padding-top: 10px;
 }

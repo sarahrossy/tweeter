@@ -17,5 +17,4 @@ $('#tweet-text').on("input", function(){
   }
 })
 
-
 });
