@@ -2,7 +2,10 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-The front-end of this single-page web app was built with HTML, CSS, JS, jQuery and AJAX front-end. The back-end uses Node, Express and MongoDB.
+The front-end of this single-page web app was built with HTML, CSS, JS, jQuery and AJAX front-end.
+The back-end uses Node, Express and MongoDB.
+Responsive design for both mobile/tablet and desktop.
+Happy tweeting!
 
 ## Getting Started
 
