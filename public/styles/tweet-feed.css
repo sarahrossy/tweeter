@@ -24,14 +24,14 @@
   padding-bottom: 30px;
 }
 
-.tweets {
+#tweets {
   padding-bottom: 20px;
   width: 90%;
   height: fit-content;
   font-size: 20px;
 }
 
-.tweet-article:hover .tweets {
+.tweet-article:hover #tweets {
   font-weight: 600;
 }
 

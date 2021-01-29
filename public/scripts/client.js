@@ -4,30 +4,6 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 
-//// Hard-coded tweets:
-// const tweets = [{
-//   "user": {
-//     "name": "Newton",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//     "handle": "@SirIsaac"
-//     },
-//   "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//   "created_at": 1461116232227
-// },
-// {
-//   "user": {
-//     "name": "Simba",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//     "handle": "@RoarinLion93"
-//     },
-//   "content": {
-//       "text": "Hakuna Matata"
-//     },
-//   "created_at": 1461116232227
-// }];
-
 // functions in here need to be in order of use
 $(document).ready(function () {
   const renderTweets = function(tweets) {
@@ -53,6 +29,7 @@ $(document).ready(function () {
      const handle = tweetObject.user.handle;
      const avatar = tweetObject.user.avatars;
      const name = tweetObject.user.name;
+
      const tweetElement = `
      <article class="tweet-article">
        <header class="header">
@@ -62,11 +39,11 @@ $(document).ready(function () {
        </header>
          <div id="tweets"></div>
        <footer class="footer">
-         <div class="date">10 days ago</div>
+         <div class="date">${moment(tweet.created_at).fromNow()}</div>
          <div class="icons">
-         <div><img src="/images/flag2.png" alt="Flag" height="15"></div>
-         <div><img src="/images/retweet.png" alt="Retweet" height="12"></div>
-         <div><img src="/images/heart.png" alt="Heart" height="15"></div>
+         <div><i class="fa fa-flag"></i></div>
+         <div><i class="fa fa-retweet"></i></div>
+         <div><i class="fa fa-heart"></i></div>
          </div>
        </footer>
      </article>
@@ -91,8 +68,10 @@ $(document).ready(function () {
       data: serializedData
      
    }).then($('#tweet-text').val(""))
-   .then(loadTweets())
    .then($('output.counter').text(140))
+   .then($('#errors').css({display: 'none'}).find('.error-empty-msg').css({display: 'none'}))
+   .then($('#errors').css({display: 'none'}).find('.error-too-long').css({display: 'none'}))
+   .then(() => loadTweets())
    .fail(() => console.log("Error!"));
   }
   });
